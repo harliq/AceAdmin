@@ -8,7 +8,9 @@ This is a decal plugin template with hot code reloading.  Any time the plugin ch
 4. Build solution and add `bin\HotDecalPluginLoader.dll` to decal.
 
 ### Additional Info
-Most if not all of your edits will take place in the `HotDecalPlugin` project. 
+Most if not all of your edits will take place in the `HotDecalPlugin` project.
+
+**Important Note**: When the plugin is reloaded (when you are already ingame) it will miss decal events like Login.  This can be important if your plugin relies on events to setup state.
 
 `HotDecalPluginLoader` is loaded as a network filter, this means it is started right when ac client is started (even before logging in to a character).  It listens for decal's `Core_PluginInitComplete` event to load the actual plugin assembly (this happens as soon as you enter world).  Once in-game, it will monitor the file system for changes to `HotDecalPlugin.dll` and will reload it as required.
 
