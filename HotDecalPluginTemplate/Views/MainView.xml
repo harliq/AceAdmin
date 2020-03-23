@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<view icon="28512" title="Hot Decal Plugin" width="322" height="90">
+		<control progid="DecalControls.FixedLayout" clipped="">
+			<control progid="DecalControls.PushButton" name="EchoButton" left="232" top="16" width="80" height="24" text="Echo to Chat"/>
+			<control progid="DecalControls.Edit" name="EchoText" left="8" top="16" width="208" height="24" imageportalsrc="4726" text="Hello World"/>
+		</control>
+</view>
