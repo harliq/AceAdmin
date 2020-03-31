@@ -11,8 +11,8 @@ using VirindiViewService;
 using VirindiViewService.Controls;
 using VirindiViewService.XMLParsers;
 
-namespace HotDecalPluginTemplate {
-    public class HotDecalPlugin {
+namespace AceAdminTemplate {
+    public class AceAdmin {
         private HudView view;
         private ViewProperties properties;
         private ControlGroup controls;
@@ -25,7 +25,7 @@ namespace HotDecalPluginTemplate {
         /// </summary>
         public static string PluginAssemblyDirectory {
             get {
-                string fullPath = System.Reflection.Assembly.GetAssembly(typeof(HotDecalPlugin)).Location;
+                string fullPath = System.Reflection.Assembly.GetAssembly(typeof(AceAdmin)).Location;
                 return System.IO.Path.GetDirectoryName(fullPath);
             }
         }
@@ -52,8 +52,9 @@ namespace HotDecalPluginTemplate {
 
         #region VVS Views
         private void CreateView() {
-            new Decal3XMLParser().ParseFromResource("HotDecalPluginLoaderTemplate.Views.MainView.xml", out properties, out controls);
-
+            // new Decal3XMLParser().ParseFromResource("AceAdminLoaderTemplate.Views.MainView.xml", out properties, out controls);
+            // new Decal3XMLParser().ParseFromResource("AceAdminTemplate.Views.MainView.xml", out properties, out controls);
+            new Decal3XMLParser().ParseFromResource("AceAdminPluginTemplate.Views.MainView.xml", out properties, out controls);
             view = new VirindiViewService.HudView(properties, controls);
 
             EchoButton = (HudButton)view["EchoButton"];

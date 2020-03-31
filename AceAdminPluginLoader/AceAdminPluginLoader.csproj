@@ -7,8 +7,8 @@
     <ProjectGuid>{67ECEDA0-5375-41F4-B755-ADE2C7F60849}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HotDecalPluginLoaderTemplate</RootNamespace>
-    <AssemblyName>HotDecalPluginLoader</AssemblyName>
+    <RootNamespace>AceAdminPluginLoaderTemplate</RootNamespace>
+    <AssemblyName>AceAdminPluginLoader</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -36,7 +36,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HotDecalPluginLoader.cs" />
+    <Compile Include="AceAdminPluginLoader.cs" />
     <Compile Include="Lib\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

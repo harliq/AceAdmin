@@ -1,5 +1,5 @@
 ﻿using Decal.Adapter;
-using HotDecalPluginTemplate.Lib;
+using AceAdminTemplate.Lib;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,9 +7,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace HotDecalPluginTemplate {
-    [FriendlyName("HotDecalPlugin")]
-    public class HotDecalPluginLoader : FilterBase {
+namespace AceAdminTemplate {
+    [FriendlyName("AceAdmin")]
+    public class AceAdminLoader : FilterBase {
         public string AccountName;
         public string CharacterName;
         public string ServerName;
@@ -26,19 +26,19 @@ namespace HotDecalPluginTemplate {
         /// <summary>
         /// Namespace of the plugin we want to hot reload
         /// </summary>
-        public static string PluginAssemblyNamespace { get { return "HotDecalPluginTemplate.HotDecalPlugin"; } }
+        public static string PluginAssemblyNamespace { get { return "AceAdminTemplate.AceAdmin"; } }
 
         /// <summary>
         /// File name of the plugin we want to hot reload
         /// </summary>
-        public static string PluginAssemblyName { get { return "HotDecalPlugin.dll"; } }
+        public static string PluginAssemblyName { get { return "AceAdminPlugin.dll"; } }
 
         /// <summary>
         /// Assembly directory (contains both loader and plugin dlls)
         /// </summary>
         public static string PluginAssemblyDirectory {
             get {
-                string fullPath = System.Reflection.Assembly.GetAssembly(typeof(HotDecalPluginLoader)).Location;
+                string fullPath = System.Reflection.Assembly.GetAssembly(typeof(AceAdminLoader)).Location;
                 return System.IO.Path.GetDirectoryName(fullPath);
             }
         }
